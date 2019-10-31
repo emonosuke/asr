@@ -1,3 +1,4 @@
+import configparser
 import torch
 from torch.utils.data import Dataset
 from torch.nn.utils.rnn import pad_sequence
@@ -8,7 +9,18 @@ DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 
 class SpeechDataset(Dataset):
-    def __init__(self, script_path, lmfb_dim=40, num_framestack=3, no_label=False):
+    def __init__(self, config_path, no_label=False):
+        config = configparser.ConfigParser()
+        config.read(config_path)
+
+        if no_label:
+            script_path = config["data"]["eval_script"]
+        else:
+            script_path = config["data"]["train_script"]
+
+        lmfb_dim = int(config["frontend"]["lmfb_dim"])
+        num_framestack = int(config["frontend"]["num_framestack"])
+
         self.lmfb_dim = lmfb_dim
         self.num_framestack = num_framestack
         self.no_label = no_label
