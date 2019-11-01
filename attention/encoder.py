@@ -22,7 +22,7 @@ class Encoder(nn.Module):
                                batch_first=True, dropout=0.2, bidirectional=True)
 
     def forward(self, x_batch, seq_lens):
-        x_packed = pack_padded_sequence(x_batch, seq_lens, batch_first=True)
+        x_packed = pack_padded_sequence(x_batch, seq_lens, batch_first=True, enforce_sorted=False)
 
         h_packed, _ = self.bi_lstm(x_packed)
 

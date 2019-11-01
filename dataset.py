@@ -52,7 +52,8 @@ class SpeechDataset(Dataset):
 
         if not self.no_label:
             label = torch.tensor(list(map(int, label.split(" "))))
-            ret += (label,)
+            lab_len = label.shape[0]
+            ret += (label, lab_len)
 
         return ret
 
@@ -60,13 +61,14 @@ class SpeechDataset(Dataset):
 def collate_fn_train(batch):
     """ for dataset `no_label=False`
     """
-    xs, seq_lens, labels = zip(*batch)
+    xs, seq_lens, labels, lab_lens = zip(*batch)
 
     x_batch = pad_sequence(xs, batch_first=True)
     seq_lens = torch.tensor(seq_lens).to(DEVICE)
-    labels = pad_sequence(labels, batch_first=True, padding_value=-1).to(DEVICE)
+    labels = pad_sequence(labels, batch_first=True, padding_value=1).to(DEVICE)
+    lab_lens = torch.tensor(lab_lens).to(DEVICE)
 
-    return {"x_batch": x_batch, "seq_lens": seq_lens, "labels": labels}
+    return {"x_batch": x_batch, "seq_lens": seq_lens, "labels": labels, "lab_lens": lab_lens}
 
 
 def collate_fn_eval(batch):

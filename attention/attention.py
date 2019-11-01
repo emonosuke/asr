@@ -1,4 +1,5 @@
 import configparser
+import torch
 import torch.nn as nn
 
 
@@ -19,11 +20,30 @@ class ContentBasedAttention(nn.Module):
         self.F_conv1d = nn.Conv1d(in_channels=1, out_channels=10, kernel_size=100, stride=1, padding=50, bias=False)
 
     def forward(self, s, h_batch, alpha, attn_mask):
-        frames_len = h_batch.shape[1]
-        conved = self.F_conv1d(alpha)  # (batch, 10, channel)
+        frames_len = h_batch.shape[1]  # maximum frame length in batch
 
+        # alpha: (batch, 1, frames)
+        # conved: (batch, 10, L) L is a length of signal sequence
+        conved = self.F_conv1d(alpha)
 
+        # L = frames_len + 2 * padding - (kernel_size - 1) (> frames_len)
+        conved = conved.transpose(1, 2)[:, :frames_len, :]  # (batch, frames, 10)
 
+        e = self.L_ee(torch.tanh(self.L_se(s) + self.L_he(h_batch) + self.L_fe(conved)))  # (batch, frames, 1)
+
+        e_max, _ = torch.max(e, dim=1, keepdim=True)
+
+        # avoid exp(too big value) becoming `inf`, then backprop `nan`
+        e_cared = torch.exp(e - e_max)
+
+        # mask e whose corresponding frame is zero-padded
+        e_cared = e_cared * attn_mask
+
+        alpha = e_cared / torch.sum(e_cared, dim=1, keepdim=True)  # (batch, frames, 1)
+
+        g = torch.sum(alpha * h_batch, dim=1)  # (batch, hidden*2)
+
+        alpha = alpha.transpose(1, 2)  # (batch, 1, frames)
 
         return g, alpha
 

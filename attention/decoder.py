@@ -17,7 +17,7 @@ class Decoder(nn.Module):
         self.hidden_size = int(config["model"]["hidden_size"])
         self.vocab_size = int(config["vocab"]["vocab_size"])
 
-        self.attn = ContentBasedAttention()
+        self.attn = ContentBasedAttention(config_path)
 
         # generate
         self.L_sy = nn.Linear(self.hidden_size, self.hidden_size)
