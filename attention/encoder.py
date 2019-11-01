@@ -15,8 +15,8 @@ class Encoder(nn.Module):
 
         input_size = lmfb_dim * num_framestack
 
-        hidden_size = int(config["encoder"]["hidden_size"])
-        num_layers = int(config["encoder"]["num_layers"])
+        hidden_size = int(config["model"]["hidden_size"])
+        num_layers = int(config["model"]["num_layers"])
 
         self.bi_lstm = nn.LSTM(input_size=input_size, hidden_size=hidden_size, num_layers=num_layers,
                                batch_first=True, dropout=0.2, bidirectional=True)

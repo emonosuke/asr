@@ -4,3 +4,7 @@ def frame_stacking(x, num_framestack):
     x_stacked = x[0:newlen * num_framestack].reshape(newlen, lmfb_dim * num_framestack)
 
     return x_stacked
+
+
+def spec_augument(x):
+    pass
