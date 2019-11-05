@@ -29,7 +29,7 @@ class ContentBasedAttention(nn.Module):
         # L = frames_len + 2 * padding - (kernel_size - 1) (> frames_len)
         conved = conved.transpose(1, 2)[:, :frames_len, :]  # (batch, frames, 10)
 
-        e = self.L_ee(torch.tanh(self.L_se(s) + self.L_he(h_batch) + self.L_fe(conved)))  # (batch, frames, 1)
+        e = self.L_ee(torch.tanh(self.L_se(s).unsqueeze(1) + self.L_he(h_batch) + self.L_fe(conved)))  # (batch, frames, 1)
 
         e_max, _ = torch.max(e, dim=1, keepdim=True)
 
@@ -46,4 +46,3 @@ class ContentBasedAttention(nn.Module):
         alpha = alpha.transpose(1, 2)  # (batch, 1, frames)
 
         return g, alpha
-

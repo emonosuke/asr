@@ -2,7 +2,6 @@ import configparser
 import torch
 import torch.nn as nn
 from attention.attention import ContentBasedAttention
-from utils import to_onehot
 
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
@@ -29,15 +28,21 @@ class Decoder(nn.Module):
         self.L_sr = nn.Linear(self.hidden_size, self.hidden_size * 4)
         self.L_gr = nn.Linear(self.hidden_size * 2, self.hidden_size * 4)
 
-    def forward(self, h_batch, seq_lens, labels):
+    def forward(self, h_batch, seq_lens, onehot):
         batch_size = h_batch.shape[0]
         frames_len = h_batch.shape[1]
-        labels_len = labels.shape[1]
+        labels_len = onehot.shape[1]
 
+        """
         attn_mask = torch.tensor(
-            [[1.0 if i < seq_len else 0.0 for i in range(frames_len)] for seq_len in seq_lens],
+            [[[1.0] if i < seq_len else [0.0] for i in range(frames_len)] for seq_len in seq_lens],
             device=DEVICE, requires_grad=False
-        )
+        )  # (batch, frames, 1)
+        """
+        attn_mask = torch.ones((batch_size, frames_len, 1), device=DEVICE, requires_grad=False)
+        for b, seq_len in enumerate(seq_lens):
+            if b < seq_len:
+                attn_mask.data[b, seq_len:] = 0.0
 
         # for the first time (before <SOS>), generate from this 0-filled hidden_state and cell_state
         s = torch.zeros((batch_size, self.hidden_size), device=DEVICE, requires_grad=False)
@@ -53,7 +58,8 @@ class Decoder(nn.Module):
             y = self.L_yy(torch.tanh(self.L_gy(g) + self.L_sy(s)))
 
             # recurrency
-            rec_in = self.L_yr(to_onehot(labels[:, step])) + self.L_sr(s) + self.L_gr(g)
+            rec_in = self.L_yr(onehot[:, step]) + self.L_sr(s) + self.L_gr(g)
+
             s, c = self._func_lstm(rec_in, c)
 
             preds[:, step] = y

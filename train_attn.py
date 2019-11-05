@@ -9,6 +9,7 @@ from torch.utils.data import DataLoader
 from attention.attn_model import AttnModel
 from dataset import SpeechDataset, collate_fn_train
 from loss import label_smoothing_loss
+from utils import to_onehot, to_onehot_ls
 
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
@@ -19,11 +20,14 @@ def train_step(model, optimizer, data):
     labels = data["labels"]
     lab_lens = data["lab_lens"]
 
+    onehot = to_onehot(labels, 19146)
+    onehot_ls = to_onehot_ls(onehot, 19146)
+
     optimizer.zero_grad()
 
-    preds = model(x_batch, seq_lens, labels)
+    preds = model(x_batch, seq_lens, onehot)
 
-    loss = label_smoothing_loss(preds, labels, lab_lens)
+    loss = label_smoothing_loss(preds, onehot_ls, lab_lens)
 
     # gradient clipping
     torch.nn.utils.clip_grad_norm_(model.parameters(), 5.0)
@@ -86,13 +90,16 @@ def train():
         loss_sum = 0
 
         for step, data in enumerate(dataloader):
-            loss_sum += train_step(model, optimizer, data)
+            loss_step = train_step(model, optimizer, data)
+            loss_sum += loss_step
 
             if (step + 1) % log_step == 0:
-                logging.info("epoch = {} step = {} / {} loss = {:.3f}".format(epoch + 1,
-                                                                              step + 1,
+                logging.info("epoch = {:>2} step = {:>6} / {:>6} loss = {:.3f}".format(epoch + 1,
+                                                                              (step + 1) * batch_size,
                                                                               num_steps,
                                                                               loss_sum / log_step))
+                loss_sum = 0
+
         if epoch == 0 or (epoch + 1) % save_step == 0:
             save_path = save_dir + "attention{}.epoch{}".format(dt_str, epoch + 1)
             torch.save(model.state_dict(), save_path)

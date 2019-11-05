@@ -24,8 +24,7 @@ def to_onehot(label: torch.tensor, num_classes: int) -> torch.tensor:
     return torch.eye(num_classes)[label].to(DEVICE)
 
 
-def to_onehot_ls(label: torch.tensor, num_classes: int, ls_prob: float) -> torch.tensor:
-    onehot = to_onehot(num_classes)[label].to(DEVICE)
+def to_onehot_ls(onehot: torch.tensor, num_classes: int, ls_prob: float = 0.9) -> torch.tensor:
     onehot_ls = ls_prob * onehot + ((1 - ls_prob) / (num_classes - 1)) * (1 - onehot)
 
     return onehot_ls

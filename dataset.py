@@ -44,14 +44,14 @@ class SpeechDataset(Dataset):
         if self.num_framestack > 1:
             x = frame_stacking(x, self.num_framestack)
 
-        x_tensor = torch.tensor(x)
+        x_tensor = torch.tensor(x, device=DEVICE)
 
         seq_len = x.shape[0]
 
         ret = (x_tensor, seq_len,)
 
         if not self.no_label:
-            label = torch.tensor(list(map(int, label.split(" "))))
+            label = torch.tensor(list(map(int, label.split(" "))), device=DEVICE)
             lab_len = label.shape[0]
             ret += (label, lab_len)
 
@@ -63,7 +63,7 @@ def collate_fn_train(batch):
     """
     xs, seq_lens, labels, lab_lens = zip(*batch)
 
-    x_batch = pad_sequence(xs, batch_first=True)
+    x_batch = pad_sequence(xs, batch_first=True).to(DEVICE)
     seq_lens = torch.tensor(seq_lens).to(DEVICE)
     labels = pad_sequence(labels, batch_first=True, padding_value=1).to(DEVICE)
     lab_lens = torch.tensor(lab_lens).to(DEVICE)

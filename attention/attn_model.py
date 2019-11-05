@@ -7,13 +7,12 @@ from attention.decoder import Decoder
 class AttnModel(nn.Module):
     def __init__(self, config_path):
         super(AttnModel, self).__init__()
-
         self.encoder = Encoder(config_path)
         self.decoder = Decoder(config_path)
 
-    def forward(self, x_batch, seq_lens, labels):
+    def forward(self, x_batch, seq_lens, onehot):
         h_batch = self.encoder(x_batch, seq_lens)
-        preds = self.decoder(h_batch, seq_lens, labels)
+        preds = self.decoder(h_batch, seq_lens, onehot)
 
         return preds
 
