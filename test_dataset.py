@@ -3,7 +3,8 @@ from dataset import SpeechDataset, collate_fn_train, collate_fn_eval
 
 dataset = SpeechDataset(config_path="params.conf")
 
-dataloader = DataLoader(dataset=dataset, batch_size=4, shuffle=False, collate_fn=collate_fn_train)
+dataloader = DataLoader(dataset=dataset, batch_size=4, shuffle=False, collate_fn=collate_fn_train,
+                        num_workers=2, pin_memory=True)
 
 for data in dataloader:
     print(data)

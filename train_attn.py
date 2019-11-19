@@ -15,11 +15,12 @@ DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 
 def train_step(model, optimizer, data):
-    x_batch = data["x_batch"]
-    seq_lens = data["seq_lens"]
-    labels = data["labels"]
-    lab_lens = data["lab_lens"]
+    x_batch = data["x_batch"].to(DEVICE)
+    seq_lens = data["seq_lens"].to(DEVICE)
+    labels = data["labels"].to(DEVICE)
+    lab_lens = data["lab_lens"].to(DEVICE)
 
+    # TODO: fix to config vocab_size
     onehot = to_onehot(labels, 19146)
     onehot_ls = to_onehot_ls(onehot, 19146)
 
@@ -82,7 +83,8 @@ def train():
     optimizer = optim.Adam(model.parameters(), weight_decay=1e-5)
 
     dataset = SpeechDataset(config_path)
-    dataloader = DataLoader(dataset=dataset, batch_size=batch_size, shuffle=False, collate_fn=collate_fn_train)
+    dataloader = DataLoader(dataset=dataset, batch_size=batch_size, shuffle=False, collate_fn=collate_fn_train,
+                            num_workers=2, pin_memory=True)
 
     num_steps = len(dataset)
 
@@ -95,9 +97,9 @@ def train():
 
             if (step + 1) % log_step == 0:
                 logging.info("epoch = {:>2} step = {:>6} / {:>6} loss = {:.3f}".format(epoch + 1,
-                                                                              (step + 1) * batch_size,
-                                                                              num_steps,
-                                                                              loss_sum / log_step))
+                                                                                       (step + 1) * batch_size,
+                                                                                       num_steps,
+                                                                                       loss_sum / log_step))
                 loss_sum = 0
 
         if epoch == 0 or (epoch + 1) % save_step == 0:

@@ -5,8 +5,6 @@ from torch.nn.utils.rnn import pad_sequence
 from utils import load_htk
 from frontend import frame_stacking
 
-DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-
 
 class SpeechDataset(Dataset):
     def __init__(self, config_path, no_label=False):
@@ -44,14 +42,14 @@ class SpeechDataset(Dataset):
         if self.num_framestack > 1:
             x = frame_stacking(x, self.num_framestack)
 
-        x_tensor = torch.tensor(x, device=DEVICE)
+        x_tensor = torch.tensor(x)
 
         seq_len = x.shape[0]
 
         ret = (x_tensor, seq_len,)
 
         if not self.no_label:
-            label = torch.tensor(list(map(int, label.split(" "))), device=DEVICE)
+            label = torch.tensor(list(map(int, label.split(" "))))
             lab_len = label.shape[0]
             ret += (label, lab_len)
 
@@ -63,10 +61,10 @@ def collate_fn_train(batch):
     """
     xs, seq_lens, labels, lab_lens = zip(*batch)
 
-    x_batch = pad_sequence(xs, batch_first=True).to(DEVICE)
-    seq_lens = torch.tensor(seq_lens).to(DEVICE)
-    labels = pad_sequence(labels, batch_first=True, padding_value=1).to(DEVICE)
-    lab_lens = torch.tensor(lab_lens).to(DEVICE)
+    x_batch = pad_sequence(xs, batch_first=True)
+    seq_lens = torch.tensor(seq_lens)
+    labels = pad_sequence(labels, batch_first=True, padding_value=1)
+    lab_lens = torch.tensor(lab_lens)
 
     return {"x_batch": x_batch, "seq_lens": seq_lens, "labels": labels, "lab_lens": lab_lens}
 
@@ -77,6 +75,6 @@ def collate_fn_eval(batch):
     xs, seq_lens = zip(*batch)
 
     x_batch = pad_sequence(xs, batch_first=True)
-    seq_lens = torch.tensor(seq_lens).to(DEVICE)
+    seq_lens = torch.tensor(seq_lens)
 
     return {"x_batch": x_batch, "seq_lens": seq_lens}
