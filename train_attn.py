@@ -9,26 +9,21 @@ from torch.utils.data import DataLoader
 from attention.attn_model import AttnModel
 from dataset import SpeechDataset, collate_fn_train
 from loss import label_smoothing_loss
-from utils import to_onehot, to_onehot_ls
 
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 
-def train_step(model, optimizer, data):
+def train_step(model, optimizer, data, vocab_size):
     x_batch = data["x_batch"].to(DEVICE)
     seq_lens = data["seq_lens"].to(DEVICE)
     labels = data["labels"].to(DEVICE)
     lab_lens = data["lab_lens"].to(DEVICE)
 
-    # TODO: fix to config vocab_size
-    onehot = to_onehot(labels, 19146)
-    onehot_ls = to_onehot_ls(onehot, 19146)
-
     optimizer.zero_grad()
 
-    preds = model(x_batch, seq_lens, onehot)
+    preds = model(x_batch, seq_lens, labels)
 
-    loss = label_smoothing_loss(preds, onehot_ls, lab_lens)
+    loss = label_smoothing_loss(preds, labels, lab_lens, vocab_size)
 
     # gradient clipping
     torch.nn.utils.clip_grad_norm_(model.parameters(), 5.0)
@@ -59,6 +54,7 @@ def train():
     save_step = int(config["save"]["save_step"])
     num_epochs = int(config["train"]["num_epochs"])
     batch_size = int(config["train"]["batch_size"])
+    vocab_size = int(config["vocab"]["vocab_size"])
 
     os.makedirs(log_dir, exist_ok=True)
     os.makedirs(save_dir, exist_ok=True)
@@ -92,7 +88,7 @@ def train():
         loss_sum = 0
 
         for step, data in enumerate(dataloader):
-            loss_step = train_step(model, optimizer, data)
+            loss_step = train_step(model, optimizer, data, vocab_size)
             loss_sum += loss_step
 
             if (step + 1) % log_step == 0:

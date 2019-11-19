@@ -1,9 +1,11 @@
 import torch
 from torch.nn.functional import log_softmax
-from utils import to_onehot
+from utils import to_onehot_ls
 
 
-def label_smoothing_loss(preds, onehot_ls, lab_lens):
+def label_smoothing_loss(preds, labels, lab_lens, vocab_size):
+    onehot_ls = to_onehot_ls(labels, vocab_size)
+
     batch_size = preds.shape[0]
 
     loss = 0

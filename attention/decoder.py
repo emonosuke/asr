@@ -24,14 +24,15 @@ class Decoder(nn.Module):
         self.L_yy = nn.Linear(self.hidden_size, self.vocab_size)
 
         # recurrency
-        self.L_yr = nn.Linear(self.vocab_size, self.hidden_size * 4)
+        # self.L_yr = nn.Linear(self.vocab_size, self.hidden_size * 4)
+        self.L_yr = nn.Embedding(self.vocab_size, self.hidden_size * 4)
         self.L_sr = nn.Linear(self.hidden_size, self.hidden_size * 4)
         self.L_gr = nn.Linear(self.hidden_size * 2, self.hidden_size * 4)
 
-    def forward(self, h_batch, seq_lens, onehot):
+    def forward(self, h_batch, seq_lens, labels):
         batch_size = h_batch.shape[0]
         frames_len = h_batch.shape[1]
-        labels_len = onehot.shape[1]
+        labels_len = labels.shape[1]
 
         """
         attn_mask = torch.tensor(
@@ -58,7 +59,7 @@ class Decoder(nn.Module):
             y = self.L_yy(torch.tanh(self.L_gy(g) + self.L_sy(s)))
 
             # recurrency
-            rec_in = self.L_yr(onehot[:, step]) + self.L_sr(s) + self.L_gr(g)
+            rec_in = self.L_yr(labels[:, step]) + self.L_sr(s) + self.L_gr(g)
 
             s, c = self._func_lstm(rec_in, c)
 

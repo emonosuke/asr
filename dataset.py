@@ -3,7 +3,7 @@ import torch
 from torch.utils.data import Dataset
 from torch.nn.utils.rnn import pad_sequence
 from utils import load_htk
-from frontend import frame_stacking
+from frontend import frame_stacking, spec_augment
 
 
 class SpeechDataset(Dataset):
@@ -17,11 +17,19 @@ class SpeechDataset(Dataset):
             script_path = config["data"]["train_script"]
 
         lmfb_dim = int(config["frontend"]["lmfb_dim"])
+        specaug = bool(config["frontend"]["specaug"])
         num_framestack = int(config["frontend"]["num_framestack"])
 
         self.lmfb_dim = lmfb_dim
+        self.specaug = specaug
         self.num_framestack = num_framestack
         self.no_label = no_label
+
+        if specaug:
+            max_mask_freq = int(config["frontend"]["max_mask_freq"])
+            max_mask_time = int(config["frontend"]["max_mask_time"])
+            self.max_mask_freq = max_mask_freq
+            self.max_mask_time = max_mask_time
 
         with open(script_path) as f:
             lines = [line.strip() for line in f.readlines()]
@@ -38,6 +46,9 @@ class SpeechDataset(Dataset):
             xpath, label = self.dat[idx].split(" ", 1)
 
         x = load_htk(xpath)[:, :self.lmfb_dim]
+
+        if self.specaug:
+            x = spec_augment(x, self.lmfb_dim, self.max_mask_freq, self.max_mask_time)
 
         if self.num_framestack > 1:
             x = frame_stacking(x, self.num_framestack)
