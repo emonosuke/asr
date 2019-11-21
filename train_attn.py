@@ -99,9 +99,10 @@ def train():
                 loss_sum = 0
 
         if epoch == 0 or (epoch + 1) % save_step == 0:
-            save_path = save_dir + "attention{}.epoch{}".format(dt_str, epoch + 1)
+            save_path = save_dir + "attention{}.network.epoch{}".format(dt_str, epoch + 1)
             torch.save(model.state_dict(), save_path)
-            torch.save(optimizer.state_dict(), save_path)
+            optimizer_save_path = save_dir + "attention{}.optimizer.epoch{}".format(dt_str, epoch + 1)
+            torch.save(optimizer.state_dict(), optimizer_save_path)
 
 
 if __name__ == "__main__":
