@@ -4,14 +4,14 @@ import torch
 from attention.attn_model import AttnModel
 from dataset import SpeechDataset
 from vocab import Vocab
-from utils import load_htk
+from utils import load_htk, subword_to_word
 from frontend import frame_stacking
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 def eval():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--config_path", type=str, default="params.conf")
+    parser.add_argument("--config_path", type=str, default="params.sw.conf")
     parser.add_argument("model_path", type=str)
     args = parser.parse_args()
 
@@ -30,6 +30,9 @@ def eval():
     script_path = config["data"]["eval_script"]
     lmfb_dim = int(config["frontend"]["lmfb_dim"])
     num_framestack = int(config["frontend"]["num_framestack"])
+    vocab_path = config["vocab"]["vocab_path"]
+
+    vocab = Vocab(vocab_path=vocab_path)
 
     with open(script_path) as f:
         xpaths = [line.strip() for line in f]
@@ -45,9 +48,11 @@ def eval():
         seq_lens = torch.tensor([seq_len]).to(device)
 
         res = model.decode(x_tensor.unsqueeze(0), seq_lens)
+        res_subword = vocab.ids2word(res)
 
-        res_str = " ".join(list(map(str, res)))
-        print(xpath, res_str, flush=True)
+        res_word = subword_to_word(res_subword)
+
+        print(xpath, " ".join(res_word), flush=True)
 
 
 if __name__ == "__main__":

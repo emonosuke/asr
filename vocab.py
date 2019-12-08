@@ -5,8 +5,10 @@ class Vocab:
 
         dic = []
         for line in lines:
+            # line: midasi+hinsi ...
             tokens = line.split()
-            dic.append(tokens[0])
+            midasi = tokens[0].split("+")[0]
+            dic.append(midasi)
         self.dic = dic
 
     def id2word(self, idx):

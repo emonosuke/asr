@@ -10,14 +10,14 @@ from attention.attn_model import AttnModel
 from dataset import SpeechDataset, collate_fn_train
 from loss import label_smoothing_loss
 
-DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 
 def train_step(model, optimizer, data, vocab_size):
-    x_batch = data["x_batch"].to(DEVICE)
-    seq_lens = data["seq_lens"].to(DEVICE)
-    labels = data["labels"].to(DEVICE)
-    lab_lens = data["lab_lens"].to(DEVICE)
+    x_batch = data["x_batch"].to(device)
+    seq_lens = data["seq_lens"].to(device)
+    labels = data["labels"].to(device)
+    lab_lens = data["lab_lens"].to(device)
 
     optimizer.zero_grad()
 
@@ -74,7 +74,7 @@ def train():
     logging.info("process id: {:d} is allocated".format(os.getpid()))
 
     model = AttnModel(config_path)
-    model.to(DEVICE)
+    model.to(device)
 
     optimizer = optim.Adam(model.parameters(), weight_decay=1e-5)
 

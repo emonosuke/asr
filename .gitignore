@@ -2,5 +2,8 @@
 __pycache__/
 checkpoints/
 log/
+private/
 params.conf
+params.sw.conf
+params.sw2.conf
 nohup.out

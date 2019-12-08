@@ -17,7 +17,7 @@ class SpeechDataset(Dataset):
             script_path = config["data"]["train_script"]
 
         lmfb_dim = int(config["frontend"]["lmfb_dim"])
-        specaug = bool(config["frontend"]["specaug"])
+        specaug = bool(int(config["frontend"]["specaug"]))
         num_framestack = int(config["frontend"]["num_framestack"])
 
         self.lmfb_dim = lmfb_dim

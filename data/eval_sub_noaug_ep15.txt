@@ -1,0 +1,271 @@
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0000211_0001695.htk <sos> えー 内容 と し まし て は <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0002761_0009322.htk <sos> 生成 過程 の 戻る モデル に 基づく Ｆ０ パターン の 分析 各 音節 の 分節 的 特徴 と <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0009867_0020254.htk <sos> えー 音調 指令 と の 間 の 相対 的 な 時間 関係 の 規則 化 え 音調 指令 の 大き さ の 比 の 規則 化 えー 音調 指令 と フレーズ 指令 の 大き さ の 量子 化 <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0020642_0026743.htk <sos> ん 規則 に よっ て 生成 さ れ た Ｆ０ パターン を 持つ 合成 音声 の デモンストレーション の 順 で お 話し し たい と 思い ます <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0033771_0045423.htk <sos> え この 図 は 日本 語 音声 に つい て の とても よく 知ら れ た 生成 過程 モデル まー 藤崎 モデル な ん です が えー この モデル は フレーズ シュレート 性 の アクセント 指令 に よっ て 実測 の Ｆ０ パターン を よく 近似 できる こと が <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0045647_0058924.htk <sos> えー 研究 に よっ て 示さ れ て い ます 日本 語 だけ で なく 英語 や ドイツ 語 の Ｆ０ パターン も よく 近似 できる こと も 示さ れ て い ます えー ところ が 中国 語 に おい て は 各 音節 ごと に 音調 と いう もの が あり モデル の 拡張 が 必要 に なり ます <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0059429_0063465.htk <sos> えー 具体 的 に は アクセント 指令 の 代わり に え 音節 <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0064077_0072023.htk <sos> ごと に 音調 指令 を 考える 必要 が ある こと が 示さ れ て い ます えー ここ で 標準 中国 語 の 音調 に つい て 簡単 に 説明 いたし ます <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0083552_0090479.htk <sos> え 御 存じ の よう に えー 中国 語 に おき まし て 音調 型 は 四 つ あり まし て 伝統 的 に えー この 図 の よう に <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0091911_0093144.htk <sos> 記述 さ れ ます <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0094240_0095091.htk <sos> と 思い ます <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0095764_0098741.htk <sos> えーっと ここ で は 四 つ の 音調 型 <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0099760_0106406.htk <sos> を えー Ｆ０ パターン を 用い て 表わし ます Ｆ０ パターン は 横軸 に 時間 えー 縦 <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0106997_0111697.htk <sos> 横軸 に 時間 縦軸 に 音声 波形 の 基本 周波 数 を プロット し た もの で えー <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0112808_0117293.htk <sos> 四 つ の 音調 型 に つい て えーと 第 一 声 第 二 声 第 三 声 第 四 声 <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0117844_0121080.htk <sos> と 呼ば し て いただい て い ます えーっとー 語 の 表記 は <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0121646_0122793.htk <sos> ここ の 例 で は どれ も <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0123328_0129454.htk <sos> いい と いう 発音 な ん です が えー あ 発音 の し方 で え 意味 が 変わっ て くる と いう こと です <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0130025_0132268.htk <sos> まず 第 一 声 こちら です けれど も <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0133109_0144439.htk <sos> えー 次 の 二 高い 音 が キープ さ れ た 状態 に 発音 し た 場合 に は 意味 は 一 と いう 意味 に なり ます えー 第 二 声 の 方 低い 音 から 急激 に 高い 音 へ 移行 し ます <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0144694_0154933.htk <sos> えー その 場合 に は 同じ いい と いう 発音 です が 意味 が おば さん に なり ます えー 第 三 声 は 発音 が ぐっと 下げ て また 元 の ところ が 戻っ て くる <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0155168_0169449.htk <sos> 形 に し ます と えー 椅子 の 意味 に なり ます 第 四 声 は 発音 が えー 高い ところ から えー 最も 低い ところ や 急激 に 移行 し て いき ます そう する と え 意味 が 一 億 二 億 の 多く に なり ます <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0169898_0170326.htk <sos> えー <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0171136_0176187.htk <sos> まず 述べ だん こちら は え 私 共 の 考え て いる 音調 指令 の 形 です <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0176819_0177120.htk <sos> えー <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0178572_0180759.htk <sos> ま 第 一 声 に つき まし て は 一 個 の 正 の <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0181518_0188807.htk <sos> 音調 指令 えー 第 三 声 以下 と 呼び ます けれど も は 一 個 の 負 の 指令 えー 第 二 声 に つい て は <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0189607_0190723.htk <sos> 正 と 負 の <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0191513_0201901.htk <sos> ふ 負 と 正 の 指令 第 四 声 に つい て は 正 と 負 の 指令 で えー 指令 を 持つ もの と いたし ます え また 第 二 声 と 第 四 声 で は 第 一 指令 の 終点 と <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0202222_0205790.htk <sos> 第 二 事例 の えー しゅしゅ 試験 ここ です ね ここ が <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0206345_0217951.htk <sos> 第 一 例 の 試験 終点 と 第 二 指令 の 視点 が 必ず 一致 する もの と し て い ます え この 考え を 入れ まし て 標準 中国 語 の Ｆ０ パターン 生成 過程 モデル は えー この よう に なり ます と <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0223403_0225229.htk <sos> えっと 左側 の 入力 <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0226936_0237573.htk <sos> 上 が フレーズ 指令 下 が 音調 指令 です えー この モデル で パラメーター を 適当 に 選択 すれ ば 実測 の 位置 ０ パターン を 予期 に する こと は ま 既に 発表 し て い おり ます えー 下段 の 式 <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0238802_0241493.htk <sos> えー ログ Ｆ０ ｔ を 与える 式 で えー <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0242446_0247130.htk <sos> 伝達 関数 自体 は 日本 語 と も 同じ な ん です が 音調 指令 が 二 つ ある 為 に えー <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0248435_0252262.htk <sos> し 下 の 項 が 少し 変わっ て き ます この よう に なり ます <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0261014_0271569.htk <sos> えー 今回 音声 資料 は えー 中国 科学 技術 大学 で 収録 さ れ た 文 音声 合計 四百 八十 文 です が 今回 分析 の 対象 と し た の は 話者 十 二 名 の うち の 一 名 <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0272115_0284999.htk <sos> えー 四十 分 の 発話 です えー 分析 方法 は 十 キロヘルツ 十 六 ビット で ＡＤ 変換 し ＬＰＣ 残差 信号 に 対し て 変形 自己 相関 法 に より 十 ミリセカンド 間隔 で 基本 周波 数 を 抽出 し <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0285254_0289153.htk <sos> モデル に 基づく ＡＢＳ 法 に より モデル の パラメーター を 決定 し て い ます <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0289857_0303557.htk <sos> また えー 波形 の 視察 に より 各 音節 の 始点 韻母 の 始点 韻母 の 終点 音節 の 終点 を 決定 し て い ます 次 に 標準 中国 語 の モデル を 用い た 場合 の 分析 例 を 示し ます <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0312237_0313470.htk <sos> え この 図 の 例文 は <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0314454_0319678.htk <sos> ミュンヘン の 白覧 会 は 電子 版 に 今日 の よう だ と いう 意味 の 文 です が えー 図 の 一番 上 が <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0320866_0321727.htk <sos> 音声 波形 <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0322283_0324551.htk <sos> えー その 下 が Ｆ０ パターン <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0325142_0326019.htk <sos> フレーズ 指令 <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0326590_0329999.htk <sos> 音調 指令 と なっ て おり ます が えー 個々 の 音節 ごと に <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0330693_0332405.htk <sos> 個々 の 音節 ごと に えー <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0335514_0336712.htk <sos> Ｆ０ パターン が <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0337512_0339821.htk <sos> 現われ て いる こと が 分かる と 思い ます <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0340448_0341238.htk <sos> えー <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0342303_0346095.htk <sos> ここ の 図 の プラス 印 が 実測 の Ｆ０ パターン <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0346829_0358160.htk <sos> えー 実線 が モデル に よる ま 殆ど 重なっ て いる ん です けれど も え 実線 が モデル に よる 最良 近似 曲線 です えー これ これ ら の 音調 指令 の 生起 する タイミング が <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0359215_0359633.htk <sos> あー <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0360443_0370173.htk <sos> 音調 指令 の 生起 数 タイミング が どこ を 基準 と し て 見れ ば 統一 的 な 傾向 を 掴む こと が できる か と いう 問題 です が 以下 の よう に な 考え 方 が えー あり ます <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0373470_0383751.htk <sos> 基準 と する 点 を どこ と する か と いう こと で えー ま 考え 方 と し て に 繋げ まし て 音節 の 開始 時点 声帯 振動 の 開始 時点 えー 韻母 の 開始 時点 <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0384653_0395657.htk <sos> の 三 つ が ある ん です が えー この 三 番 目 の 韻母 の 開始 時点 を 基準 と し た 場合 に 第 一 音調 指令 の 始点 が ほぼ 一定 と 見なせる えー 第 一 音 聴取 で の 終点 と <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0396177_0400912.htk <sos> 第 二 音調 指令 の 終点 は 韻母 の 長 さ と 共 に 直線 的 に 増加 する えー <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0402252_0408460.htk <sos> と いう まー 傾向 を 使う こと が でき て えー ま 韻母 の 自然 て いう の は どこ か って いう 話 な ん です が <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0414704_0425178.htk <sos> この 図 は えー 上 が ま 音声 波形 下 が え 音調 指令 の 図 な ん です が えー 一 つ の 音節 を 表わし て い ます えーっとー <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0427410_0428929.htk <sos> 第 一 本 聴取 へ の <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0430871_0431875.htk <sos> あー んと 進み ます が <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0433236_0441350.htk <sos> 中国 語 に おい て ま 一 つ の 音節 と いう の は 声母 って いう 部分 と 韻母 って いう 部分 から 構成 さ れ て いる ん です けれど も えー 声母 って いう の は <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0442278_0444551.htk <sos> えー 音節 の 先頭 に くれ 子音 の 部分 <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0445071_0449138.htk <sos> それ から 声門 の 次 に 来る 韻母 と 呼ば れる 部分 て いう の は <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0450514_0461396.htk <sos> えー 子音 に 続い て 出現 する 母音 と えー それ に 続く 後続 子音 を 合わせ た もの です で です ね えー ここ の 真ん中 の 線 韻母 の 始点 て いう の を <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0462889_0470050.htk <sos> えー ここ の 線 で 表わし て い ます が え ここ を 基準 点 と し て 考える と 系統 的 な 傾向 を 見る こと が でき ます <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0470713_0472737.htk <sos> えー 次 の 図 を 御覧 ください <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0482013_0487808.htk <sos> え こちら の グラフ は 左側 が 第 一 声 右側 が 第 三 声 の もの です が えー 横軸 に <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0488374_0494847.htk <sos> 韻母 の 試験 から 韻母 の 終点 まで の えー 長 さ 韻母 の 持続 時間 を 表わし て い ます えー 縦軸 の 方 は <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0495586_0498893.htk <sos> ん 韻母 の 始点 を 基準 と し た 場合 の 音調 指令 の 始点 <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0499454_0500662.htk <sos> と えー <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0501676_0506753.htk <sos> 音調 指令 の 終点 の 位置 を 表わす ん えーとー 図 な ん です けれど も <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0507609_0507930.htk <sos> えー <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0508965_0520239.htk <sos> ま グラフ を 見 て 分かる 通り えー 韻母 の 持続 時間 に 対し て 音調 指令 の タイミング って いう もの は えー 多少 の ばらつき ある もの の は 直線 的 な 関係 が ある と いう こと が 言え ます <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0520494_0522283.htk <sos> えー この 直線 は <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0522951_0535433.htk <sos> えー 回帰 直線 を 表わし て い い ます え 具体 的 に 言い ます と 韻母 の 試験 を 基準 と し た 場合 に は 音調 指令 の 始点 は 韻母 の 長 さ に よら ず ほぼ 一定 で えー 音調 指令 の 終点 の 方 は <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0535637_0538975.htk <sos> 約 四十 五 度 の 傾き を 持つ 直線 で 近似 さ れ て い ます <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0539887_0543955.htk <sos> えー す 第 三 声 に つい て も 同じ よう な 傾向 が 見 られ ます <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0546095_0547594.htk <sos> それ から 第 二 声 と 第 四 声 <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0548323_0554480.htk <sos> に つい て で 左側 が 第 二 です ね 右側 が 第 四 声 な ん です けれど も え 第 一 音 聴取 へ の 始点 は <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0555927_0570346.htk <sos> えー 韻母 の 長 さ に よら ず 行っ て で 第 一 指令 と 第 二 子音 へ の 切り替え の 時点 は やはり えー 直線 的 な 関係 を 持っ て い ます えーっと 第 二 声 の 終点 に つい て は やはり 四十 五 度 の 傾き の 直線 で 近似 さ れ て い ます <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0570784_0573934.htk <sos> え 第 四 声 に つい て も 同様 の 傾向 が 見 られ ます と <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0577736_0581406.htk <sos> で 次 は えー 音調 指令 の 大き さ に つい て な ん です が <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0583318_0594923.htk <sos> 図 の 方 は 横軸 に 韻母 の 持続 時間 えー 縦軸 に は 音調 指令 の 大き さ を プロット し た 図 な ん です が 全体 的 に ん 第 一 声 第 二 声 第 三 声 第 四 声 の 図 な ん です が <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0595188_0605652.htk <sos> えー どれ も ばらつい て い て 特に 際立っ た 相関 は ない と 言え ます えー 韻母 の 長 さ と 音調 指令 の 大き さ に は はっきり と し た 相関 は 見 られ ない です が えー <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0606692_0613700.htk <sos> ま 第 二 声 と 第 四 声 に つき まし て 二 つ の 音調 指令 第 一 指令 と 第 二 指令 の 間 に <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0614403_0618725.htk <sos> えー 何 か 関係 が ある の で は ない か と 調べ た 結果 が 次 の 図 に なり ます <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0625667_0627201.htk <sos> え こちら の 図 は 横軸 に <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0627833_0628185.htk <sos> えー <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0629255_0631564.htk <sos> 横軸 に 音調 指令 の 大き さ を と <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0632288_0641656.htk <sos> 第 一 音調 指令 の 大き さ を 取っ て い ます え 縦軸 に は 第 二 音調 指令 の 大き さ と 第 一 音 聴取 へ の 大き さ の 比 を プロット し た 図 に なり ます <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0642349_0647803.htk <sos> え そう し ます と 多少 ばらつい て あり ます が え 一定 の 見る 一定 の 傾向 を 見る こと が でき まし て <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0648858_0649974.htk <sos> えー 直線 が <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0650591_0662089.htk <sos> 回帰 直線 と なっ て い ます えー 今 お 目 に 掛け た よう な 音調 指令 の タイミング と 振幅 比 の 関係 こちら です ね を えー モデル の 拘束 条件 と し て 加え た 場合 で も <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0662303_0665667.htk <sos> 良い 近似 が 得 られる か どう か を 分析 に よっ て 確かめ て み まし た <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0677680_0685591.htk <sos> え 一番 上段 の 方 です が えー は 先程 と 同じ 図 です が モデル に よる 最良 近似 の Ｆ０ パターン に なり ます <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0687120_0687696.htk <sos> えー <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0689138_0689938.htk <sos> Ｂ の 方 は <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0691177_0699745.htk <sos> え 音調 指令 の タイミング を 先程 の 回帰 直線 状 に 拘束 し た 場合 の 最良 近似 Ｆ０ パターン に なり ます えー <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0700555_0705015.htk <sos> タイミング の 規則 を 高速 を 導入 し た 場合 で も ま 殆ど <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0706539_0710830.htk <sos> えー 実測 と 変わら ない 良い 近似 が 得 られ て いる と 言える と 思い ます <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0711972_0713547.htk <sos> え それ から 次 が です ね <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0715183_0717410.htk <sos> え タイミング の 拘束 に 加え まし て <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0718939_0721371.htk <sos> えー 先程 の 振幅 の <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0722502_0733231.htk <sos> えー 音調 指令 の 大き さ の 比 を 回帰 直線 状 に 拘束 し た 場合 の 最良 近似 Ｆ０ パターン が こちら の Ｃ に なる ん です けれど も やはり えー 良い 近似 が 得 られ て いる <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0733435_0733603.htk <sos> と <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0734245_0735846.htk <sos> い ます 得 られ て い ます <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0738771_0745316.htk <sos> まー これ ら の 拘束 条件 を 導入 し て も えー 合成 音声 の 自然 性 に は 差しつかえ が ない と いう こと に なり ます <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0746055_0747278.htk <sos> で えーと です ね <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0750142_0752115.htk <sos> ま Ｄ の 方 が です が えー <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0753032_0753608.htk <sos> 最後 に <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0754602_0762742.htk <sos> 後続 条件 を 導入 し た 上 で えー ま 量子 化 を 行なっ た 図 な ん です けど も それ を しか の す 話 を 先 に し たい と 思い ます <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0768516_0779974.htk <sos> え これ まで は 自然 ないし ０ パターン に 見 られ た 音調 指令 の えー タイミング や 大き さ の 関係 を 規則 に 表わし まし た が 規則 合成 に おき まし て は 更に 指令 の 大き さ を なるべく 簡単 に 量子 化 する 必要 が あり ます <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0780249_0790694.htk <sos> そこ で 我々 は 分析 結果 を 参考 に し て えー 音調 指令 の 大き さ を 協調 普通 抑圧 の 三 段階 に 利用 しか し まし た えー 加型 い は こう なっ て おり ます <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0790745_0794536.htk <sos> え 上 が 音調 指令 の 大き さ の 量子 化 を 行なっ た 図 な ん です けれど も <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0795540_0796009.htk <sos> ん <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0796890_0803017.htk <sos> 各 指令 に 対し て えー 協調 通常 抑圧 の 三 段階 の 量子 化 を 行なっ て い ます と <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0804627_0807038.htk <sos> で えー 第 二 声 と 第 四 線 に つき まし て は <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0807665_0813863.htk <sos> えー 第 一 指令 と 第 二 指令 が ある 訳 な ん です が えー 先程 の 回帰 直線 上 に 拘束 し た 値 <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0814408_0815198.htk <sos> を えー <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0815846_0817069.htk <sos> 対応 さ し て い ます <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0818078_0831055.htk <sos> 一方 フレーズ 指令 の 方 は まー ほえ 今日 は 御 説明 する 字 が ない ん です が ほぼ 同様 の 考え で 分析 結果 を 規格 化 さ し て いただい て い ます それ で は あのー 実際 に 高速 条件 や 量子 化 を 行なっ た 上 で 生成 さ れ た Ｆ０ パターン を 持つ <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0831371_0833761.htk <sos> えー 合成 音声 を えー お 聞き <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0834352_0835519.htk <sos> お 聞か せ し ます <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0841641_0844102.htk <sos> え 今回 は 以下 の 音声 を 作成 し まし た <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0846676_0856625.htk <sos> えー 一番 ＬＰＣ 分析 再 合成 二 番 モデル に よる 最良 近似 を 用い た 再 合成 三 番 音調 指令 の タイミング の 拘束 条件 を 適用 し た えー <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0097/A01M0097_0857400_0866636.htk <sos> 音声 えー 三 に 加え て 音調 指令 の 大き さ の 比 の 拘束 条件 を 適用 し た もの えー 五 番 目 その 四 番 に 加え て 更に 指令 の し て おり を しかし し た もの です <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0110/A01M0110_0000111_0007009.htk <sos> 私 共 は これ まで に 音声 を 利用 し た 新しい 非難 誘導 システム に つい て 種々 の 検討 を し て おり ます <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0110/A01M0110_0007673_0018910.htk <sos> 課際 自身 自己 等 の 緊急 祈願 の よう に わずか な 時間 遅れ も 許さ れ ない 緊急 を 要する 場合 同時 に 二 か国 語 の 音声 メッセージ が 必要 と さ れる 場合 が 考え られ ます <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0110/A01M0110_0019476_0022518.htk <sos> ここ で 有 二 か国 語 は 例えば 日本 語 と 英語 です <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0110/A01M0110_0023190_0031328.htk <sos> この よう な 場合 聴者 は 注目 し た 一方 の 音声 を 正確 に 聞き 取り また 確実 に 内容 を 理解 し なけれ ば なり ませ ん <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0110/A01M0110_0032561_0034914.htk <sos> ここ で は 基礎 的 な 検討 と いたし まし て <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0110/A01M0110_0037354_0042215.htk <sos> えー この 可能 性 を 調べる 為 に 基礎 的 な 検討 を 行ない まし た 具体 的 に 言う と <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0110/A01M0110_0044415_0051320.htk <sos> 種々 に 組み合わせ た 二 つ の 音声 メッセージ を 同時 に 再生 し その 聞き分け 易 さ および 了解 性 に つい て <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0110/A01M0110_0052174_0053236.htk <sos> 検討 いたし まし た <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0110/A01M0110_0053845_0058403.htk <sos> この 分野 で の 発表 は 初めて な の で 動作 を 起こし た 音 の 頃 よろしく お 願い いたし ます <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0110/A01M0110_0073231_0075954.htk <sos> 続い て 実験 方法 に つい て 説明 いたし ます <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0110/A01M0110_0076467_0079728.htk <sos> 評価 実験 は この よう な 建物 空間 で 行ない まし た <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0110/A01M0110_0094049_0105251.htk <sos> 図 の よう に 被験 者 に 対し て 二 つ の スピーカー を 左右 対象 に きらき角 十 五 度 で 設置 いたし まし た スピーカー と 被験 者 と の 距離 は 二 メートル と なっ て おり ます <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0110/A01M0110_0107602_0109721.htk <sos> 再生 する 音声 メッセージ は <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0110/A01M0110_0110928_0113953.htk <sos> 日本 難易 度 の 低い 英 会話 教材 の 中 から <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0110/A01M0110_0115842_0121541.htk <sos> 平易 な 英語 会話 および 日本 語 レベル の 日本 語 会話 の 男性 女性 を 用い まし た <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0110/A01M0110_0123669_0124121.htk <sos> これ を も <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0110/A01M0110_0124834_0126367.htk <sos> 評価 実験 に 使用 する <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0110/A01M0110_0127103_0133164.htk <sos> 音声 メッセージ は 被験 者 が 初めて 聞く 音声 で は なく 事前 に 提示 し た もの から 作成 いたし まし た <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0110/A01M0110_0135071_0138706.htk <sos> これ を 元 に 同時 再生 さ れる 二 つ の 音声 名詞 提示 を <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0110/A01M0110_0141799_0144654.htk <sos> 作成 いたし あ 百 種類 程度 作成 いたし まし た <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0110/A01M0110_0146592_0147352.htk <sos> なお 聞き は <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0110/A01M0110_0147966_0150476.htk <sos> 被験 者 が 聞く 音声 の 受聴 レベル は <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0110/A01M0110_0151030_0154836.htk <sos> 約 ろくじ それぞれ 約 六十 五 節 占める と なっ て おり ます <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0110/A01M0110_0166167_0170025.htk <sos> 続い て 組み合わし た 音声 の 聞き分け 易 さ の 弁別 に つい て ひ <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0110/A01M0110_0171384_0173013.htk <sos> 説明 し たい と 思い ます <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0110/A01M0110_0173849_0183791.htk <sos> 組み合わさ れ た 二 種 の 音声 メッセージ の うち 指示 し た 一方 の 音声 を この よう な 七 段階 の この よう な 基準 を 元 に 七 段階 で 評価 いたし まし た <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0110/A01M0110_0184468_0185235.htk <sos> 評価 値 が <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0110/A01M0110_0186144_0191600.htk <sos> の 数値 が 高い もの が 聞き分け 易 さ が の 評価 が 高い もの と なっ て おり ます <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0110/A01M0110_0192780_0200913.htk <sos> 次 に し 指示 さ れ た 一方 の 音声 の と は 別 の もう 一方 の 音声 に 注目 し て もらい 同様 の 評価 を 行ない まし た <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0110/A01M0110_0201809_0205292.htk <sos> これ を メッセージ の 内容 を 書い て 五 回 ずつ 行ない まし た <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0110/A01M0110_0206400_0207332.htk <sos> なお 被験 者 は <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0110/A01M0110_0208325_0212970.htk <sos> へ 正常 な 聴力 を 持つ 二十 代 の 日本 人 男性 四 人 です <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0110/A01M0110_0224394_0228383.htk <sos> こちら は 組み合わせ た 二 種 の 音声 の 意志 を しま 示し て おり ます <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0110/A01M0110_0230177_0232403.htk <sos> こちら に あり ます 日本 語 男性 <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0110/A01M0110_0232978_0235000.htk <sos> 日本 語 男性 と いう 組み合わせ は <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0110/A01M0110_0235564_0242555.htk <sos> 同一 人物 に よる 異なる メッセージ の 組み合わせ を 示し て おり ます 同様 に 日本 語 女性 日本 語 女性 と ある の も <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0110/A01M0110_0243648_0247512.htk <sos> えー 同一 人物 に よる 異なる メッセージ を 示し て おり ます <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0110/A01M0110_0259610_0262077.htk <sos> 続い て 結果 に つい て 説明 いたし ます <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0110/A01M0110_0265126_0269687.htk <sos> こちら は 日本 語 男声 を 中心 と し て 結果 を まとめ た もの です <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0110/A01M0110_0270811_0276710.htk <sos> 全 被験 者 の 聞き分け や 大き さ の 評価 平均 値 で 聞き分け 易 さ を 表わし て おり ます <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0110/A01M0110_0278123_0280363.htk <sos> 日本 語 男声 に 注目 し た 場合 <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0110/A01M0110_0281306_0285821.htk <sos> 最も 高い 評価 を 示し て いる の は 英語 女性 と 組み合わせ た 場合 です <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0110/A01M0110_0287569_0293937.htk <sos> こちら は 評価 平均 値 が 約 四 点 八 と なっ て おり 聞き分け が 容易 で ある こと を 示し て おり ます <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0110/A01M0110_0294852_0295746.htk <sos> また いっ <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0110/A01M0110_0296441_0299709.htk <sos> 逆 に 聞き分け 易 さ の 評価 が 低い 組み合わせ は <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0110/A01M0110_0300627_0303034.htk <sos> 日本 語 男性 の 同一 人物 に よる <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0110/A01M0110_0303665_0304211.htk <sos> メッセージ <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0110/A01M0110_0304730_0307130.htk <sos> 異なる メッセージ を 組み合わせ た 場合 です <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0110/A01M0110_0309556_0314977.htk <sos> 一方 を 組み合わせ た 音声 に 注目 し た 場合 です が こちら の 波線 で 示し た もの に なり ます <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0110/A01M0110_0316629_0326042.htk <sos> えー 最も 評価 が 高かっ た の は 英語 女性 です こちら の 方 も 評価 値 は い 四 点 習っ と なっ て おり 知識 訳 が 容易 で ある こと を 示し て おり ます <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0110/A01M0110_0337001_0338536.htk <sos> 続い て 日本 語 女性 <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0110/A01M0110_0339194_0341966.htk <sos> を 中心 に まとめ た 結果 は こちら に なり ます <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0110/A01M0110_0345353_0352806.htk <sos> 日本 語 女性 と 組み合わせ た 音声 日本 語 女性 の 評価 の 高い 組み合わせ は 英語 男性 と 組み合わせ た 場合 に なり ます <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0110/A01M0110_0353706_0357929.htk <sos> こちら 評価 値 が 約 五 ． 一 と なっ て おり 聞き分け 概要 に なっ て おり ます <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0110/A01M0110_0358730_0367473.htk <sos> 一方 聞き分け ん 易 さ の 評価 が 低い 組み合わせ は 同一 人物 に よる 日本 語 女性 の 異なる メッセージ と 組み合わせ た 場合 です <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0110/A01M0110_0370895_0373419.htk <sos> なお 組み合わせ た 音声 に 注目 し た 場合 <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0110/A01M0110_0373926_0377166.htk <sos> 最も 高い 組み合わせ と なっ た の は 英語 男性 に なり まし た <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0110/A01M0110_0377782_0384419.htk <sos> こちら の 方 は 日本 語 女性 ん に 注目 し た 場合 に 比べ 評価 値 が 低く なっ て おり ます が <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0110/A01M0110_0385047_0394376.htk <sos> こちら の 要因 の 一 つ と いたし まし て 英語 男性 の スピーチ レート が 他 の 音声 に 比べ やや 早かっ た 為 と 考え て おり ます <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0110/A01M0110_0407248_0412992.htk <sos> 次 に 現在 示し まし た 評価 の 高かっ た 組み合わせ と 評価 の 低い 組み合わせ に つい て <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0110/A01M0110_0413828_0419906.htk <sos> 設置 す 設置 する 二 つ の スピーカー の 角度 を 変え て 同様 の 評価 を 行ない まし た <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0110/A01M0110_0420876_0423728.htk <sos> ０ 度 から 六十 度 まで に 変化 さ し て おり ます <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0110/A01M0110_0438628_0439280.htk <sos> こちら <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0110/A01M0110_0440116_0441187.htk <sos> 結果 に なり ます <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0110/A01M0110_0442389_0444808.htk <sos> えー 角度 パル ん パラメーター と し て <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0110/A01M0110_0445758_0448205.htk <sos> 聞き取り 易 さ の 評価 を 表わし て おり ます <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0110/A01M0110_0449656_0453227.htk <sos> 角度 が ０ 度 に ０ 度 の 時 に 注目 し た 場合 <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0110/A01M0110_0454074_0464102.htk <sos> 評価 の 低い 組み合わせ は 日本 語 男性 の こっ 同一 人物 に よる 異なる メッセージ 日本 語 女性 の 同一 人物 に よる 異なる メッセージ と なっ て おり ます <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0110/A01M0110_0465406_0470304.htk <sos> こちら は 評価 値 が 約 三 に なっ て おり やや 聞き分け に なくなっ て おり ます <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0110/A01M0110_0471435_0478340.htk <sos> その 他 の 音声 に 関し て は 評価 値 は 四 ． 五 以上 と なっ て おり 式 分け が 容易 に なっ て おり ます <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0110/A01M0110_0480609_0484748.htk <sos> 次 に スピーカー の せ 知覚 度 を 変化 さ せ て いっ た 場合 <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0110/A01M0110_0486964_0492465.htk <sos> スピーカー の 設置 角度 が ひらっきらけ ば 開く 程 より 高い 値 を 示し て おり ます が <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0110/A01M0110_0493751_0496549.htk <sos> ０ 度 に おい て も 評価 値 の 高かっ た 組み合わせ や <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0110/A01M0110_0497279_0498329.htk <sos> は に つい て は <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0110/A01M0110_0499090_0504145.htk <sos> スピーカー の 開き角 を 変え て も 評価 値 に 大きな 差 は 認め られ ませ ん でし た <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0110/A01M0110_0523971_0531855.htk <sos> まとめ と いたし まし て 音声 の 組み合わせ あ に よっ て その 聞き分け 易 さ が 大きく 異なる こと が 分かり まし た <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0110/A01M0110_0532561_0540918.htk <sos> また 被験 者 と 再生 用 音源 の 設置 位置 関係 が 聞き分け 易 さ に 影響 を 及ぼす こと も 確認 いたし まし た <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0110/A01M0110_0541784_0548622.htk <sos> なお 日本 語 と 英語 の 組み合わせ に よる メッセージ の 聞き分け 易 さ の 評価 が 良好 で あっ た こと は <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0110/A01M0110_0549823_0553892.htk <sos> 目的 の 意味 から 考え て 大変 ぎ 深い と 考え て おり ます <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0110/A01M0110_0555183_0555748.htk <sos> 今後 は <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0110/A01M0110_0556755_0559769.htk <sos> 自然 音声 を 用い て 行なっ て おり まし た が <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0110/A01M0110_0560511_0561780.htk <sos> 一方 の 音声 を <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0110/A01M0110_0563125_0571539.htk <sos> 新 い 人工 的 あるいは 機械 的 な 音声 を 用い て 聞き分け 易 さ に 影響 を 及ぼす か どう か に つい て 検討 を 指摘 <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0110/A01M0110_0572219_0573671.htk <sos> 行き たい と 考え て おり ます <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0110/A01M0110_0577491_0579713.htk <sos> 以上 で 発表 を 終わり ます あり がとう ござい まし た <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0137/A01M0137_0000316_0004412.htk <sos> えーと です ね 最近 あのー な ん です けれど も えー 仮定 ない <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0137/A01M0137_0004989_0016286.htk <sos> こっち を あの 色んな 電気 製品 です と か の え 危険 から 出し て いる 方法 な ん です けど も これ が あのー 高齢 者 など から 高い 音 を 推定 ちょっと 聞き取り にくい と いう よう な 口調 が 大変 <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0137/A01M0137_0026578_0031854.htk <sos> え 講演 の 話 って いう の を ん ちょっと 真面目 に 取り組む ない と いけ ない ね って 話 に なっ て き て おり ます <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0137/A01M0137_0032606_0045008.htk <sos> で 特に あの ユニバーサル デザイン だ と です と か そう いう 風 な 立場 から えー ま 高齢 者 に も 使い 易い って いう こと で えー そう いう 方針 は どう いう の か な って 言う と やっぱり 高齢 者 高い 周波 数 に 聞き にくい と いう こと で <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0137/A01M0137_0045370_0049046.htk <sos> え 低 め の 周波 数 の 音 を 使っ て しまお う と いう こと に なっ て おり ます <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0137/A01M0137_0050501_0052722.htk <sos> ただ そう する と どう いう こと で 起きる か と 申し ます と <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0137/A01M0137_0053577_0062878.htk <sos> 背景 の です ね え 家庭 など で 聞こえる 背景 音 に よっ て マスキング さ れ て また 逆 に 聞き取り にくい 部分 が 出 て き は し ない か と いう こと が 心配 語 と し て 一 つ あり ます <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0137/A01M0137_0063425_0068458.htk <sos> で それ に 対し て あのー お えー スピーチ など に おき まし て は えー <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0137/A01M0137_0069173_0076404.htk <sos> ある 程度 あのー 実証 的 な えー マスキング の 様子 なんか を もう 少し 出 て いる ん です けど まだ あのー <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0137/A01M0137_0076965_0077574.htk <sos> こう いう <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0137/A01M0137_0078155_0079436.htk <sos> 補聴 に 対し て は ない ん です ね <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0137/A01M0137_0079938_0088930.htk <sos> んで それ も まだ あのー ノイズ です と か そう いう もの に 対し て 行なわ れ て おり まし て えー じ サイン の 騒音 を 使っ た 時 に どう なる の か って いう 風 な こと が <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0137/A01M0137_0090049_0100411.htk <sos> まだ 不 十分 だ と 思い ます で まー とにかく えー 実際 の お 補聴 に 使わ に は どの 辺 の 音 の 高 さ の 音 が いい の か って いう こと で えー 実験 し て み まし た <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0137/A01M0137_0101011_0111484.htk <sos> で 実験 音 の 組み合わせ は こんな 感じ で やっ て おり まし て えー ま 背景 音 と いたし まし て 総 時期 です と か テレビ です と か ピア の えー 食器 やら い えー これ 手洗い です ね <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0137/A01M0137_0111755_0121940.htk <sos> えー それ から かん 既戦 野菜 為 えー ステレオ の 音楽 え 上顎 の 枠 を と えー 洗濯 機 を 掛ける 音 それ から えー 初期 エラー 域 <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0137/A01M0137_0122812_0136903.htk <sos> で 装置 を の 方 と し て 純音 を 使っ てる ん です けれど も えー 一 キロヘルツ 一 ． 五 キロヘルツ 二 キロヘルツ 三 キロヘルツ 四 キロヘルツ こう いっ た 音 を 使っ て おり ます え これ ら の 音 を あのー えー 使っ て 話者 も ちょっと ん 中身 もう 少し 詳しく <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0137/A01M0137_0137286_0137935.htk <sos> 言い ます と <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0137/A01M0137_0140567_0142898.htk <sos> えー 高知 オン の 側 な ん です けれど も <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0137/A01M0137_0143873_0145296.htk <sos> えー <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0137/A01M0137_0147528_0148836.htk <sos> ０ ． 一 ミリセカンド <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0137/A01M0137_0149535_0150711.htk <sos> の 断続 音 <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0137/A01M0137_0151435_0160662.htk <sos> で よ これ は 家庭 内 補聴 の 中 で は 警告 の 為 に 使わ れる 音 に 多い 音 です で 立ち上がり 立ち下がり に は クリック音 を 生じ の よう に 若干 勾配 を 付け て おり ます <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0137/A01M0137_0161521_0174917.htk <sos> えー で 周波 数 うー が えー 二 キロヘルツ から 四 キロヘルツ って いう の が い ま い まー えー 勝て ない 実際 に よく 使わ れ てる 音 な ん です けれど も それ 以外 に も おー 低い 方 の 音 と いう こと で 一 キロヘルツ と 一 ． 五 キロヘルツ を 足し た と いう こと です <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0137/A01M0137_0175468_0183725.htk <sos> それ で 倍音 の 影響 を を 排除 する 為 に えー 純音 を 使っ て おり ます えー 実際 の 仮定 内 で は ん どちら か と 言う と 家計 <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0137/A01M0137_0184662_0187726.htk <sos> あ に 近い よう な 音 も 音 を 使っ て おり ます <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0137/A01M0137_0189757_0191459.htk <sos> えー 背景 音 の 方 な ん です けれど も <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0137/A01M0137_0192742_0199374.htk <sos> えー これ あの 松下 前期 さん の モニター 過程 って いう の が あり まし て そちら の 方 で 実際 に 取ら し た もの と ら し て いただい た もの です <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0137/A01M0137_0199905_0210415.htk <sos> えー 生活 場面 て いう の を 設定 いたし まし て えー 何 かしら 行動 を し て もらっ て す えー それ を 録音 する と いう 形 で えー 千 九百 九十 六 年度 に とっ た もの です <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0137/A01M0137_0212150_0220086.htk <sos> で 音量 レベル に つい て せ 水準 は 特に 設け ず に えー 採集 し た 状況 を 大体 再現 する よう な 形 で 設定 し て おり ます <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0137/A01M0137_0227117_0228741.htk <sos> えー 実験 方法 です けれど も <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0137/A01M0137_0231114_0241611.htk <sos> え 背景 音 と 補聴 音 の おー えー 出 方 です ね えー ま 被験 者 は えー こう いう 音 を 聞い て おり まし て ま 背景 音 が 五 秒間 流れ ます <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0137/A01M0137_0242023_0250526.htk <sos> えー 洗濯 機 の 音 です と か テレビ の 音 です と か 色々 あり ます え その 真ん中 辺 に え 高知 オン が ＰＰＰＰＰ と 五 回 に なり ます <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0137/A01M0137_0253729_0254921.htk <sos> で これ を 聞い て です ね <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0137/A01M0137_0255550_0256656.htk <sos> えー <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0137/A01M0137_0257430_0269613.htk <sos> ま こんな 形 で えー 被験 者 実験 室 の 中 に いる 訳 です けど も えー こんな 形 で 聞い て み て えー 補聴 の 側 の 大き さ を 変え て いき ます え 調整 法 です ね 被験 者 調整 法 で <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0137/A01M0137_0270020_0271229.htk <sos> えー 書い て いき ます <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0137/A01M0137_0272409_0274272.htk <sos> で 住所 系列 だけ で やっ て おり ます <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0137/A01M0137_0276081_0286702.htk <sos> えー で えー 何 回 も 繰り返し て 調節 し て いる と いう こと に なっ て えー ぎりぎり を 得る 大き さ に 調節 し て ください と いう 形 で えー 被験 者 に は し えー 教示 し て あり ます <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0137/A01M0137_0290049_0295518.htk <sos> もう その 実験 法 を ざっと 求める と こんな 形 です ね 実験 も は ランダム に 提示 さ れ ます <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0137/A01M0137_0296944_0299169.htk <sos> で 聞こえる ぎりぎり の 大きな 調節 <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0137/A01M0137_0299703_0302648.htk <sos> えー で え 上昇 系列 あ 集計 率 だけ が ちょっと <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0137/A01M0137_0303412_0313877.htk <sos> えー で 被験 者 の 方 です けれど も えー 実際 に これ 高齢 者 を 使わ ない と お 話 に なり ませ ん の で え 人材 え シルバー人材 センター と いう ところ に えー 協力 依頼 を いたし まし て <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0137/A01M0137_0314185_0317882.htk <sos> えー 六十 一 歳 から 七十 五 歳 の 男女 各 二十 名 <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0137/A01M0137_0318902_0327627.htk <sos> えー それ で え 被験 者 の 方 です けど も え 比較 的 聴力 の いい 健聴 群 と 難聴 文 お 悪い 難聴 が <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0137/A01M0137_0328162_0329321.htk <sos> と 二 つ に 分け まし た <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0137/A01M0137_0329958_0342430.htk <sos> これ 聴力 検査 で えー 一 キロヘルツ と 二十 五 キロヘルツ あー 一 キロヘルツ 四 キロヘルツ の えー 音 が あのー 二十 五 デシベル って いう 基準 で 聞こえ た か 聞こえ ない 方 が 出 て おり ます <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0137/A01M0137_0343211_0349070.htk <sos> あ それ と 若者 の 方 は 十 名 だけ 用い て おり ます これ は 十 九 歳 から 二十 一 歳 の 男性 です <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0137/A01M0137_0353149_0357730.htk <sos> で その 結果 を あのー 図 の 方 に 出し て いる 訳 です けど ま ざっと 見 て いき ます と <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0137/A01M0137_0359617_0364868.htk <sos> えー ん 何 かしら これ ん ん ん 横軸 に <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0137/A01M0137_0366776_0376809.htk <sos> 統一 的 な 尺度 を 持っ て き て 一気 に 比較 し たい ん です けど も ま 一 個 一 個 そのー 背景 を こと に 出し て おり ます えー 丸 が 若者 えー し おし <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0137/A01M0137_0377047_0383922.htk <sos> 素人 が えー 健聴 群 の ロ ん 高齢 者 えー で し 黒い 四角 が <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0137/A01M0137_0384699_0386599.htk <sos> えー 難聴 群 の 高齢 者 です ね <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0137/A01M0137_0387726_0392014.htk <sos> あー 全体 的 に やはり 難聴 群 高齢 者 は 難聴 群 の 方 が 上 に 来 て おり ます <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0137/A01M0137_0394218_0399461.htk <sos> で え これ 全体 ばっと 見 て いき ます と どう いう 風 な 傾向 に ある か と 申し ます と <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0137/A01M0137_0400131_0401254.htk <sos> えー <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0137/A01M0137_0405127_0405871.htk <sos> やはり あのー <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0137/A01M0137_0406466_0407143.htk <sos> 高い 方 で <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0137/A01M0137_0408322_0416175.htk <sos> えー テレビ なんか です と こう いっ た 開放 ま 問題 ん です けれど も 高い 方 で 聞こえ ない って いう これ は 元々 の 聴力 の 影響 が ある と <eos>
+/n/rd32/mimura/e2e/data/original/feature/eval/lmfb/eval1/A01M0137/A01M0137_0424897_0430546.htk <sos> えー それ から 例えば です ね えー 野菜 為 だ と か じゃ ポット みたい な 音 です と <eos>

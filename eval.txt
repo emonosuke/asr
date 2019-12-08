@@ -1,0 +1,6 @@
+#!/bin/bash
+
+for i in {30..40}; do
+  echo ${i}
+  python tools/calc_wer.py --ignore_sos_eos checkpoints.word.libri960/e${i}.test_other.txt /n/work1/ueno/data/librispeech/eval/ref/ref.test_other -w /n/work1/ueno/data/librispeech/texts/word.id
+done

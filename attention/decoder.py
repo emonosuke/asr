@@ -5,7 +5,7 @@ import torch.nn as nn
 from torch.nn.functional import log_softmax
 from attention.attention import ContentBasedAttention
 
-DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 INF_MIN = -1e10
 
 
@@ -41,17 +41,17 @@ class Decoder(nn.Module):
         frames_len = h_batch.shape[1]
         labels_len = labels.shape[1]
 
-        attn_mask = torch.ones((batch_size, frames_len, 1), device=DEVICE, requires_grad=False)
+        attn_mask = torch.ones((batch_size, frames_len, 1), device=device, requires_grad=False)
         for b, seq_len in enumerate(seq_lens):
             if b < seq_len:
                 attn_mask.data[b, seq_len:] = 0.0
 
         # for the first time (before <SOS>), generate from this 0-filled hidden_state and cell_state
-        s = torch.zeros((batch_size, self.hidden_size), device=DEVICE, requires_grad=False)
-        c = torch.zeros((batch_size, self.hidden_size), device=DEVICE, requires_grad=False)
-        alpha = torch.zeros((batch_size, 1, frames_len), device=DEVICE, requires_grad=False)
+        s = torch.zeros((batch_size, self.hidden_size), device=device, requires_grad=False)
+        c = torch.zeros((batch_size, self.hidden_size), device=device, requires_grad=False)
+        alpha = torch.zeros((batch_size, 1, frames_len), device=device, requires_grad=False)
 
-        preds = torch.zeros((batch_size, labels_len, self.vocab_size), device=DEVICE, requires_grad=False)
+        preds = torch.zeros((batch_size, labels_len, self.vocab_size), device=device, requires_grad=False)
 
         for step in range(labels_len):
             g, alpha = self.attn(s, h_batch, alpha, attn_mask)
@@ -76,11 +76,11 @@ class Decoder(nn.Module):
 
         # sequence, score, (cell state, hidden state, attention weight)
         beam_paths = [([], 0.0,
-                       (torch.zeros((batch_size, self.hidden_size), device=DEVICE, requires_grad=False),
-                        torch.zeros((batch_size, self.hidden_size), device=DEVICE, requires_grad=False),
-                        torch.zeros((batch_size, 1, frames_len), device=DEVICE, requires_grad=False)))]
+                       (torch.zeros((batch_size, self.hidden_size), device=device, requires_grad=False),
+                        torch.zeros((batch_size, self.hidden_size), device=device, requires_grad=False),
+                        torch.zeros((batch_size, 1, frames_len), device=device, requires_grad=False)))]
 
-        attn_mask = torch.ones((batch_size, frames_len, 1), device=DEVICE, requires_grad=False)
+        attn_mask = torch.ones((batch_size, frames_len, 1), device=device, requires_grad=False)
         for b, seq_len in enumerate(seq_lens):
             if b < seq_len:
                 attn_mask.data[b, seq_len:] = 0.0
@@ -104,7 +104,7 @@ class Decoder(nn.Module):
 
                     y_c.data[0][best_idx] = INF_MIN  # this enable to pick up 2nd, 3rd ... best words
 
-                    best_idx_tensor = torch.tensor([best_idx])
+                    best_idx_tensor = torch.tensor([best_idx], device=device)
                     rec_in = self.L_yr(best_idx_tensor) + self.L_sr(s) + self.L_gr(g)
                     new_s, new_c = self._func_lstm(rec_in, c)
 
