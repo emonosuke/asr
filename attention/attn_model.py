@@ -22,3 +22,10 @@ class AttnModel(nn.Module):
             preds = self.decoder.decode(h_batch, seq_lens)
 
         return preds
+    
+    def decode_nbest(self, x, seq_lens, num_best):
+        with torch.no_grad():
+            h_batch = self.encoder(x, seq_lens)
+            preds = self.decoder.decode_nbest(h_batch, seq_lens, num_best)
+
+        return preds

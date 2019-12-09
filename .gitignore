@@ -1,9 +1,12 @@
 .idea/
 __pycache__/
 checkpoints/
+data/
 log/
 private/
 params.conf
 params.sw.conf
 params.sw2.conf
+predict.txt
+predict_2.txt
 nohup.out
